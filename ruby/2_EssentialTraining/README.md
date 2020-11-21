@@ -106,7 +106,7 @@ def name=(value)
 end 
 ```
 
-- refactoring Animal class
+- refactoring Animal class with attr_*
 
 ```ruby
 class Animal
@@ -120,13 +120,98 @@ puts pig.noise
 # Oink!
 ```
 
+- self
+    - use self to reference the current instance from code inside the instance
+    - add self when calling writer methods
+    - including self is always a safe choice
+
+```ruby
+class Radio
+    attr_reader :volume
+    
+    def volume=(value)
+        return if value < 1 || value > 10
+        @volume = value
+    end 
+    
+    def crank_it_up
+      self.volume = 11
+    end 
+    
+    def volume_status
+        "Current volume: #{volume}"
+    end
+end
+```
+
 ### Method Access Control
 
+- access control restricts access to methods from outside an instance 
+    - public: anyone can access (default)
+    - protected: can only be called by instances of the class and its subclasses (inheritance)
+    - private: can only be called by instances of a class
+    
+```ruby
+class Newsletter
+  
+# public methods
+    def method1
+    end 
+
+    protected
+    
+        def method2
+        end 
+  
+    private
+        
+        def method3
+        end
+end
+```    
 
 ### Initialize method
 
+- initialize method: method called automatically whenever a new instance of a class is created
 
+```ruby
+class Animal
+    attr_reader :noise
+  
+    def initialize
+      @noise = 'Oink!'
+      puts "New animal instantiated"
+    end 
+  
+end
 
+end
+
+pig = Animal.new
+# New animal instantiated
+puts pig.noise
+# Oink!
+```
+
+- passing in arguments
+
+```ruby
+class Animal
+    attr_accessor :noise, :color
+  
+    def initialize(options={}) # options is a hash
+      @noise = options[:noise] || 'Grrr!'
+    end 
+end
+
+pig = Animal.new({noise: 'Oink!'})
+puts pig.noise
+# Oink!
+
+dog = Animal.new
+puts dog.noise
+# Grrr!
+```
 
 ## Chapter 2: Class Attributes and Methods
 
