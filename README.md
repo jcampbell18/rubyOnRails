@@ -137,7 +137,41 @@
     - view in browser
         - url: `localhost:3000`
 
+## Commands
+
+### Controller, View
+
+- rails generate controller <ControllerName> <viewName>
+    - `rails generate controller Demo index`
+	
+### Model
+
+- rails generate model <TableName> <column:property>
+	- `rails generate model Page name:string position:integer visible:boolean`
+	
+### Migration
+
+- up or create
+	- `rails db:migrate`
+- down or delete
+	- `rails db:migrate VERSION=0`
+	
+### Rails Console
+
+- you must be in root directory of project (/home/<username>/Sites/<projectName>
+	- `rails console` or `rails c`
+- or choose specific environment
+	- `rails console -e development`
+	- `rails console -e test`
+
 ## additional links
 
-[Kevin Skoglund: Installing and Running ROR 6](https://www.linkedin.com/learning/installing-and-running-ruby-on-rails-6/)
+[Kevin Skoglund: Installing and Running Ruby on Rails 6](https://www.linkedin.com/learning/installing-and-running-ruby-on-rails-6/)
+
+[Kevin Skoglund: Ruby on Rails 6 Essential Training](https://www.linkedin.com/learning/ruby-on-rails-6-essential-training?u=41913900))
+
+[Ruby on Rails 6 API](https://api.rubyonrails.org/)
+
+[Ruby on Rails 6 Guides](https://guides.rubyonrails.org/)
+
 [rubygems.org](https://rubygems.org/)
