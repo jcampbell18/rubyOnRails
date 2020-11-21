@@ -1,7 +1,7 @@
 link |
 ---- |
-[back](../) |
-[next](../2_EssentialTraining/) |
+[back](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/1_The_Basics) |
+[next](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/2_EssentialTraining) |
 
 # Kevin Skoglund: Ruby Essential Training Part 2 - Classes and Modules
 

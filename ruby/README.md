@@ -1,12 +1,12 @@
 link |
 ---- |
-[back](../README.md) |
+[back](https://github.com/jcampbell18/rubyOnRails) |
 
 # Ruby
 
-[# Kevin Skoglund: Ruby Essential Training Part 1](/1_The_Basics/README.md)
+[# Kevin Skoglund: Ruby Essential Training Part 1](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/1_The_Basics)
 
-[Kevin Skoglund: Ruby Essential Training Part 2 - Classes and Modules](/2_EssentialTraining/README.md)
+[Kevin Skoglund: Ruby Essential Training Part 2 - Classes and Modules](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/2_EssentialTraining)
 
 []()
 
