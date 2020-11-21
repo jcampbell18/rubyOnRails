@@ -196,18 +196,18 @@ end
 
 ### loops
 
-```
+```ruby
 loop do
     break if boolean
-    ...
+    # ...
 end
 
 while boolean
-    ...
+    # ...
 end
 
 until boolean
-    ...
+    # ...
 end
 ```
 
@@ -221,9 +221,10 @@ iterators | code
 (range).each | `(1..5).each { puts "Hi"}`
 
 - block variable
+
 ```ruby
 5.downto(1) do |i|
-    puts "Hi #{i}
+    puts "Hi #{i}"
 end
 ```
 
@@ -274,11 +275,11 @@ puts "Hello #{response}!"
 
 ```ruby
 # curly brace
-5.downto(1) { |i|... }
+5.downto(1) { |i| puts i }
 
 # do end
 5.downto(1) do |i|
-    ...
+    # ...
 end
 ```
 
