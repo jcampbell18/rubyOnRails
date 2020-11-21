@@ -1,8 +1,12 @@
+link |
+---- |
+[back](../) |
+
 # Ruby
 
-[# Kevin Skoglund: Ruby Essential Training Part 2 - Classes and Modules]()
+[# Kevin Skoglund: Ruby Essential Training Part 1](/1_The_Basics/)
 
-[Kevin Skoglund: Ruby Essential Training Part 2 - Classes and Modules]()
+[Kevin Skoglund: Ruby Essential Training Part 2 - Classes and Modules](/2_EssentialTraining/)
 
 []()
 

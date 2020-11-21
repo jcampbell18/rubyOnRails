@@ -1,3 +1,8 @@
+link |
+---- |
+[back](../) |
+[next](../3_EssentialTraining/) |
+
 # Kevin Skoglund: Ruby Essential Training Part 2 - Classes and Modules
 
 ## Chapter 1: Classes

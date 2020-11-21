@@ -1,3 +1,8 @@
+link |
+---- |
+[back](../) |
+[next](../2_EssentialTraining/) |
+
 # Kevin Skoglund: Ruby Essential Training Part 2 - Classes and Modules
 
 ## Chapter 2: Object Types
