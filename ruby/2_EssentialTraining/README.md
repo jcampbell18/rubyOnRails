@@ -523,15 +523,73 @@ Date.today.month
 
 ### Namespacing
 
+- prevents conflicts when code has similarly named classes and methods
+    - prevents conflicts with Ruby classes
+- frequently used to namespace classes in open-source plugsin
 
+```ruby
+# MakeSparks: online dating website
+module MakeSparks
+  class Date
+    #...
+  end 
+end 
+
+dinner = MakeSparks::Date.new
+dinner.date Date.new
+```
 
 ### Mixins
 
+- ruby only allows subclasses to inherit from one superclass
+- modules allow us to package up shared functionality
+    - moduels can then be mized in to a class
+- when to use class inheritance or mixins
+    - class inheritance: a class needs to modify or extend the behavior of another class
+    - mixins: several classes need to utilize a single set of behaviors
+    
+```ruby
+module Nameable
+    attr_accessor :first_name, :last_name
 
+    def full_name
+      "#{first_name} #{last_name}"
+    end
+end 
+
+module ContactInfo
+  attr_accessor :city, :state, :zip
+  
+  def city_state_zip
+    "#{city}, #{state} #{zip}"
+  end
+end
+
+class Person
+  include Nameable
+  include ContactInfo
+end 
+
+class Customer
+    include Nameable
+    include ContactInfo
+end 
+```
 
 ### Load, require, include
 
-
+- `load`
+    - loads a source file every time it is called
+    - returns true if a file is loaded successfully
+- `require`
+    - use full path
+    - loads a source file only once
+    - returns true if a file is loaded successfully and has not been loaded before
+- `require_relative`
+    - same as require but use the relative path
+- `include`
+    - includes modules in classes
+    - NOTHING to do with loading files
 
 ## Chapter 6: Exceptions
 
