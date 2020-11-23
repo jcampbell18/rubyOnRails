@@ -593,4 +593,147 @@ end
 
 ## Chapter 6: Exceptions
 
+### Handle Exceptions
 
+- Classes for handling exceptional errors
+    - [Exception class in Ruby Docs](https://ruby-doc.org/core-2.7.2/Exception.html)
+    - most common error is StandardError
+        - e.g., `1/0` results in ZeroDivisionError
+        
+- handling inside the method
+        
+```ruby
+def divide(x,y)
+    puts x/y
+rescue
+    puts "Cannot divide by zero"
+end 
+
+divide(4,2)
+# 2
+divide(4,0)
+# Cannot divide by zero
+```
+
+- bubble up (handling outside the method)
+
+```ruby
+def divide(x,y)
+    puts x/y
+end 
+
+begin
+  divide(4,2)
+  divide(4,0)
+rescue
+    puts "Cannot divide by zero"
+end
+```
+
+### Handle specific Exceptions
+
+- StandardError is default for rescue
+- example below is specific StandardErrors, or defaults to StandardError
+- NEVER rescue the entire Exception class `rescue Exception`
+    - it's too broad
+
+```ruby
+def divide(x,y)
+    puts x/y
+rescue ZeroDivisionError
+    puts "Cannot divide by zero"
+rescue TypeError
+    puts "Requires two integer arguments"
+rescue
+    puts "No worries"
+end 
+
+divide(4,2)
+# 2
+divide(4,0)
+# Cannot divide by zero
+divide(4, "2")
+# Requires two integer arguments 
+```
+
+### Exception Methods
+
+- Exception#class is useful to know which class is erroring
+    - `ZeroDivisionError`
+- Exception#message the message that tells you what was wrong
+    - `(divided by 0)`
+- Exception#backtrace returns the array of strings that tells you what is wrong
+    - `Traceback (most recent call last): ...`
+- Exception#full_message returns the typical message when something goes wrong
+    - everything above combined
+
+```ruby
+begin
+    1/0
+rescue ZeroDivisionError => e
+    puts "Cannot divide by zero"
+    puts "#{e.class}: #{e.message}"
+rescue => e
+    puts "#{e.class} handled"
+end 
+```
+
+### Raise Exceptions
+
+- code can raise exceptions too
+    - can use Ruby's built-in exception classes
+    - can define custom exceptions
+- RunTimeError is default for `raise`
+
+```ruby
+def even_numbers(array)
+    unless array.is_a?(Array)
+      raise ArgumentError
+    end 
+
+    if array.length == 0
+      raise StandardError.new("Too few elements")
+    end 
+
+    array.find_all { |el| el.to_i % 2 == 0 }
+end
+
+puts even_numbers([1, 2, 3, 4, 5]).join(',')
+# 2, 4
+puts even_numbers(1..20).join(',')
+# ArgumentError (ArgumentError)
+puts even_numbers([]).join(',')
+# Too few elements (StandardError)
+```
+
+### Custom Exceptions
+
+- best practice is inheriting from StandardError
+
+```ruby
+class TooLoudError < StandardError
+  attr_reader :volume
+
+  def initialize(value, msg=nil)
+    # Let parent class set message 
+    super(msg || "Too loud!" )
+    @volume = value
+  end
+end 
+
+class Radio
+  def volumne=(value)
+    if value > 10
+      raise TooLoudError.new(value)
+    end 
+    @volume = value
+  end 
+end 
+
+begin
+  r = Radio.new
+  r.volume = 20
+rescue TooLoudError => e
+  puts "Volume #{e.volume}: #{e.message}"
+end 
+```
