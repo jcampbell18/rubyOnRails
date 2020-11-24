@@ -1,0 +1,82 @@
+---
+early_presidents:
+- number: '1'
+  last_name: Washington
+  first_name: George
+  start: '1789'
+  end: '1797'
+  party: Independent
+  state: Virginia
+  wikipedia: https://en.wikipedia.org/wiki/George_Washington
+- number: '2'
+  last_name: Adams
+  first_name: John
+  start: '1797'
+  end: '1801'
+  party: Federalist
+  state: Massachusetts
+  wikipedia: https://en.wikipedia.org/wiki/John_Adams
+- number: '3'
+  last_name: Jefferson
+  first_name: Thomas
+  start: '1801'
+  end: '1809'
+  party: Democratic-Republican
+  state: Virginia
+  wikipedia: https://en.wikipedia.org/wiki/Thomas_Jefferson
+- number: '4'
+  last_name: Madison
+  first_name: James
+  start: '1809'
+  end: '1817'
+  party: Democratic-Republican
+  state: Virginia
+  wikipedia: https://en.wikipedia.org/wiki/James_Madison
+- number: '5'
+  last_name: Monroe
+  first_name: James
+  start: '1817'
+  end: '1825'
+  party: Democratic-Republican
+  state: Virginia
+  wikipedia: https://en.wikipedia.org/wiki/James_Monroe
+- number: '6'
+  last_name: Adams
+  first_name: John Q.
+  start: '1825'
+  end: '1829'
+  party: Democratic-Republican/National Republican
+  state: Massachusetts
+  wikipedia: https://en.wikipedia.org/wiki/John_Quincy_Adams
+- number: '7'
+  last_name: Jackson
+  first_name: Andrew
+  start: '1829'
+  end: '1837'
+  party: Democratic
+  state: Tennessee
+  wikipedia: https://en.wikipedia.org/wiki/Andrew_Jackson
+- number: '8'
+  last_name: Van Buren
+  first_name: Martin
+  start: '1837'
+  end: '1841'
+  party: Democratic
+  state: New York
+  wikipedia: https://en.wikipedia.org/wiki/Martin_Van_Buren
+- number: '9'
+  last_name: Harrison
+  first_name: William H.
+  start: '1841'
+  end: '1841'
+  party: Whig
+  state: Ohio
+  wikipedia: https://en.wikipedia.org/wiki/William_Henry_Harrison
+- number: '10'
+  last_name: Tyler
+  first_name: John
+  start: '1841'
+  end: '1845'
+  party: Whig
+  state: Virginia
+  wikipedia: https://en.wikipedia.org/wiki/John_Tyler
