@@ -181,15 +181,67 @@ end
 
 ### Create Directories
 
+- Create
+    - Dir.mkdir(filepath)
+    - `require 'fileutils'`
+        - FileUtils.mkdir(filepath)
+- Delete
+    - Dir.delete(filepath)
+        - does not delete unless empty
+    - Dir.empty?(filepath)
+        - find out if empty
+    - `require 'fileutils`
+        - FileUtils.rmdir(filepath)
+            - does not delete unless empty
+        - FileUtils.rm_r(filepath)
+            - deletes directory and all contents recursively
 
+```ruby
+current_dir = File.dirname(__FILE__)
+# current_dir = '.'
+new_dir = File.join(current_dir, 'new')
+# new_dir = './new'
+Dir.mkdir(new_dir)
+# 0
+Dir.empty?(new_dir)
+# true
+Dir.delete(new_dir)
+# 0
+```
 
 ### Change Directories
 
+- `relative_path = File.dirname(__FILE__)`
+- `absolute_path = File.expand_path(relative_path)`
+- `chdir` is change directory
 
+```ruby
+Dir.pwd
+# "Users/kevinskoglund/Desktop/ruby_sandbox"
+path = File.join('', 'Users', 'kevinskoglund', 'Desktop')
+# "Users/kevinskoglund/Desktop"
+Dir.chdir(path)
+# 0
+Dir.pwd
+# "Users/kevinskoglund/Desktop"
+Dir.chdir('ruby_sandbox')
+# 0
+Dir.pwd
+# "Users/kevinskoglund/Desktop/ruby_sandbox"
+```
 
 ### Entries
 
-
+- entries: working with contents of directories
+- `array = Dir.entries(filepath)` => includes entries for "." and ".."
+    - returns array of entries
+    
+```ruby
+Dir.entries('.').each do |entry|
+    next if ['.', '..'].include?(entry)
+    puts "#{entry}: " + (File.file?(entry)) ? 'file' : 'dir'
+end 
+```
 
 ### Glob
 
