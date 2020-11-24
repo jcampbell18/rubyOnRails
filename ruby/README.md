@@ -4,7 +4,7 @@ link |
 
 # Ruby
 
-- Study Guide / Notes
+### Study Guide / Notes
 
 [Kevin Skoglund: Ruby Essential Training Part 1](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/1_The_Basics)
 
