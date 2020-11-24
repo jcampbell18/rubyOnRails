@@ -4,11 +4,13 @@ link |
 
 # Ruby
 
+- Study Guide / Notes
+
 [Kevin Skoglund: Ruby Essential Training Part 1](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/1_The_Basics)
 
 [Kevin Skoglund: Ruby Essential Training Part 2 - Classes and Modules](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/2_EssentialTraining)
 
-[]()
+[Kevin Skoglund: Ruby Essential Training Part 3 - Files, Formats, Templates](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/3_EssentialTraining)
 
 ## additional links
 
