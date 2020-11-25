@@ -2,7 +2,7 @@ link |
 ---- |
 [back](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/2_EssentialTraining) |
 [ruby](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby) |
-[RoR](https://github.com/jcampbell18/rubyOnRails) |
+[Ruby on Rails](https://github.com/jcampbell18/rubyOnRails) |
 
 
 # Kevin Skoglund: Ruby Essential Training Part 3 - Files, Formats, Templates

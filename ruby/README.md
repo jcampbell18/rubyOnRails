@@ -1,6 +1,9 @@
 link |
 ---- |
-[back](https://github.com/jcampbell18/rubyOnRails) |
+[Ruby Essential Training 1](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/1_The_Basics) |
+[Ruby Essential Training 2](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/2_EssentialTraining) |
+[Ruby Essential Training 3](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/3_EssentialTraining) |
+[Ruby on Rails](https://github.com/jcampbell18/rubyOnRails) |
 
 # Ruby
 
