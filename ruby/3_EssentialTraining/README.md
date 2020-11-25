@@ -275,18 +275,231 @@ c* | Matches files beginning with c
 
 ### CSV
 
+- comma-separated values
+
+```ruby
+require 'csv'
+
+# read from file
+CSV.foreach("file.csv") do |row|
+    # ...
+end 
+
+array_of_arrays = CSV.read("file.csv")
+
+# write to file
+CSV.open('file.csv', 'w') do |csv|
+    csv << ["row", "of", "CSV", "data"]
+end 
+```
+
+```ruby
+require 'csv'
+
+header = nil
+presidents = []
+
+CSV.foreach('us_presidents.csv') do |row|
+    if header.nil?
+      header = row
+    else
+      presidents << row
+    end 
+end 
+
+early_presidents = presidents[0..9] # the first 10 presidents
+
+CSV.open('early_presidents.csv', 'w') do |csv|
+    csv << header
+    early_presidents.each do |row|
+      csv << row
+    end
+end 
+```
+
 ### CSV to Hashes
+
+- header row contains labels (not repeated)
+- hash uses labels as keys for each value (repeated)
+- `.zip` take array and another array and merge (e.g., header and data)
+- `to_h` turns to hash
+
+```ruby
+labels = header.map { |item| item.downcase.gsub(/\s/, '_') } # headers are all lowercase and spaces are replaced with underscores
+new_array = presidents.map do |row|
+    labels.zip(row).to_h
+end 
+
+# {
+#    "number" => "1",
+#    "last_name" => "Washington"
+#    "first_name" => "George",
+#    ...
+```
 
 ### YAML
 
+- YAML: YAML Ain't Markup Language
+    - YAML is a human-friendly data serialization standard for all programming languages
+    - often used for configuration files
+    - Psych uses a more modern library of YAML
+    - [YAML](http://yaml.org)
+
+- Read YAML
+
+```ruby
+require 'psych'
+
+yaml = File.read("file.yml")
+ruby_data = Psych.load(yaml)
+```
+
+- Write YAML
+
+```ruby
+require 'psych'
+
+yaml = Psych.dump(ruby_data)
+yaml = {'enabled' => true}.to_yaml
+
+File.write("file.yml", yaml)
+```
+
 ### JSON
 
+- JSON: JavaScript Object Notation
+    - [JSON](http://json.org)
+    
+- Read a File
+    
+```ruby
+require 'json'
+
+json = File.read("file.json")
+hash = JSON.parse(json)
+```
+
+- Write to File
+
+```ruby
+require 'json'
+
+jason = JSON.generate(hash)
+json = {'enabled' => true}.to_json
+json = File.write("file.json", json)
+```
+
 ### XML
+
+- XML: Extensible Markup Language
+    - Designed to make documents human and machine readable
+    - Built-in Ruby XML Library: REXML
+        - outdated!
+    - Ruby Gems (modern libraries)
+        - [nokogiri](https://nokogiri.org) => most popular and powerful
+        - nori
+        - gyoku
+        - multi_xml
+        - xml-simple => very simple
 
 ## Chapter 5: ERB Templating
 
 ### Embed Ruby
 
+- ERB: Embedded Ruby
+    - eRuby templating system to embed Ruby
+    - in standard library
+- `<% code %>` => evaluates the code and does NOT output
+- `<%= code %>` => evaluates the code and outputs
+
+```ruby
+require 'erb'
+
+template = "The year is <%= Time.now.year %>."
+puts template
+# "The year is <%= Time.now.year %>."
+
+renderer = ERB.new(template)
+puts renderer.result
+# "The year is 2020."
+```
+
+- example of using both ways
+
+```ruby
+require 'erb'
+
+template = ""
+template << "<% result = 2 + 2 %>"
+template << "2 + 2 = <%= result %>"
+
+renderer = ERB.new(template)
+puts renderer.result
+# "2 + 2 = 4"
+```
+
 ### Binding
 
+- binding: every ruby object stores its instance variable in a Binding object
+    - accessible using private instance method called #binding
+    - passing a binding as an argument to ERB#result gives a template acecss to all instance variables stored in the binding
+        - only works with instance variables, not local or class
+            - @variable
+         
+ ```ruby
+require 'erb'
+
+@year = Time.now.year
+template = "The year is <%= @year %>."
+renderer = ERB.new(template)
+puts renderer.result(binding)
+# "The year is 2020."
+```   
+
 ### Template Files
+
+```ruby
+require 'erb'
+
+@year = Time.now.year
+
+template = File.read(filepath)
+
+puts ERB.new(template).result(binding)
+```
+
+- example:
+
+```text
+# inquiry.txt.erb
+Product inquiry from:
+
+First Name: <%= @customer.first_name %>
+Last Name: <%= @customer.last_name %>
+Email: <%= @customer.email %>
+```
+
+```ruby
+# erb_inquiry.rb
+require 'erb'
+
+class Customer
+    attr_accessor :first_name, :last_name, :email
+end 
+
+@customer = Customer.new
+@customer.first_name = "Jason"
+@customer.last_name = "Campbell"
+@customer.email = "jasonlcampbell18@gmail.com"
+
+filename = 'inquiry.txt.erb'
+template = File.read(filename)
+output = ERB.new(template).result(binding)
+puts output
+
+# Product inquiry from:
+#
+# First Name: Jason
+# Last Name: Campbell
+# Email: jasonlcampbell18@gmail.com
+```
