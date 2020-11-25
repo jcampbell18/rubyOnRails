@@ -245,7 +245,31 @@ end
 
 ### Glob
 
+- glob: returns an array of filenames which match a pattern
+    - patterns are similar to globs in unix shell
+    - primitive regular expression
+    - `array = Dir.glob("*")` => does not include entries for "." and ".."
+    
+```ruby
+Dir.glob("*").each do |entry|
+    next if entry.start_with?('.')
+    next if File.directory?(entry)
+    puts "file: " + entry
+end 
+```
 
+#### Glob Pattern Symbols
+
+symbol | description
+------ | -----------
+* | Matches all files (wildcard)
+c* | Matches files beginning with c
+*c | Matches files ending with c
+*c* | Matches all files with c in them
+** | Matches directories recursively
+? | Matches any one character
+[a-z] | Matches any one character in the set
+{p,q} | Matches either literal p or literal q
 
 ## Chapter 4: Common Data Formats
 
