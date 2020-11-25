@@ -8,3 +8,5 @@ Due: <%= @due_date %>
 Overdue fee: <%= @fee %>
 
 Thank you for your prompt attention to this matter.
+
+---

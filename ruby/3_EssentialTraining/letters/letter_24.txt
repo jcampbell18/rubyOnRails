@@ -1,0 +1,12 @@
+Dear Grover Cleveland,
+
+The following library book is overdue.
+
+"The History of New York"
+Due: 1897
+
+Overdue fee: $ 123.0
+
+Thank you for your prompt attention to this matter.
+
+---

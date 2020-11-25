@@ -1,0 +1,12 @@
+Dear John Adams,
+
+The following library book is overdue.
+
+"The History of Massachusetts"
+Due: 1801
+
+Overdue fee: $ 219.0
+
+Thank you for your prompt attention to this matter.
+
+---
