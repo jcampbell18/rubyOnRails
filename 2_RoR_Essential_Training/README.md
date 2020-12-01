@@ -1,6 +1,20 @@
+link |
+---- |
+[Installation/Setup](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/1_The_Basics) |
+[Controllers/Views](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/3_EssentialTraining) |
+[Models/Associations](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/3_EssentialTraining) |
+[ruby](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby) |
+[Ruby on Rails](https://github.com/jcampbell18/rubyOnRails) |
+
 # Kevin Skoglund: Ruby on Rails 6 - Essential Training
 
-## Commands
+## Chapter 2: Get Started with Ruby on Rails
+
+- create the project
+    - rails new project_name -option option_name
+        - `rails new simple_cms -d mysql`
+
+# Commands
 
 ### Controller, View
 
