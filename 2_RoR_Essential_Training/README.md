@@ -10,9 +10,20 @@ link |
 
 ## Chapter 2: Get Started with Ruby on Rails
 
-- create the project
-    - rails new project_name -option option_name
-        - `rails new simple_cms -d mysql`
+### Create a new Ruby on Rails project
+
+- rails new project_name -option option_name
+    - `rails new simple_cms -d mysql`
+    
+### Configure a Ruby on Rails project
+
+- see [Ruby on Rails: Installation and Running Ruby on Rails 6](https://github.com/jcampbell18/rubyOnRails/tree/main/1_Installing_Setup) to setup table and user
+-  in the path `/simple_cms/config/database.yml`, update username and password to reflect the database for the project
+
+### Generate a controller and view
+
+- rails generate controller ControllerName ViewName
+    - `rails generate controller Demo index`
 
 # Commands
 
