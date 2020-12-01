@@ -9,7 +9,7 @@
 	
 ### Model
 
-- rails generate model <TableName> <column:property>
+- rails generate model `TableName` `column:property`
 	- `rails generate model Page name:string position:integer visible:boolean`
 	
 ### Migration
@@ -21,8 +21,12 @@
 	
 ### Rails Console
 
-- you must be in root directory of project (/home/<username>/Sites/<projectName>
+- you must be in root directory of project (/home/`username`/Sites/`projectName`
 	- `rails console` or `rails c`
 - or choose specific environment
 	- `rails console -e development`
 	- `rails console -e test`
+	
+### URL Helpers
+
+- ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/READMEscreenshots/Screenshot%202020-11-18%20134522.png)
