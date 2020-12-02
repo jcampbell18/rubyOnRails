@@ -38,4 +38,5 @@
     - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/projects/READMEscreenshots/Screenshot%202020-12-01%20182648.png)
 - created a user and password for the database
     - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/projects/READMEscreenshots/Screenshot%202020-12-01%20183101.png)
-    
+- created the rails project
+    - `rails new invoicing -d mysql`
