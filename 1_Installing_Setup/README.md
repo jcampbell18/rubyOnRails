@@ -18,8 +18,8 @@ link |
 ### Install Linux on Windows
 
 - install ubuntu cli app from Microsoft Store
-    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/READMEscreenshots/Screenshot%202020-11-16%20140140.png)
-    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/READMEscreenshots/Screenshot%202020-11-16%20140211.png)
+    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20140140.png)
+    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20140211.png)
 - Ubuntu will ask you to create username and password for user
 - update the software
     - `sudo apt update`
@@ -32,7 +32,7 @@ link |
 
 - retrieve and install rbenv
     - `curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash`
-    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/READMEscreenshots/Screenshot%202020-11-16%20125634.png)
+    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20125634.png)
 - add rbenv to PATH
     - `nano .bashrc`
     - goto bottom of file and add these lines: 
@@ -47,20 +47,20 @@ link |
 
 - get list of available ruby versions
     - `rbenv install --list`
-    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/READMEscreenshots/Screenshot%202020-11-16%20125706.png)
+    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20125706.png)
 - install specific ruby version
     - `rbenv install 2.7.2`
-    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/READMEscreenshots/Screenshot%202020-11-16%20125730.png)
+    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20125730.png)
 - see what versions are installed    
     - `rbenv versions`
-    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/READMEscreenshots/Screenshot%202020-11-16%20125753.png)
+    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20125753.png)
 - make a version active
     - `rbenv global 2.7.2`
 - verify ruby is installed by getting version number
     - `ruby -v`
 - verify gem is installed by getting version number
     - `gem -v`
-- ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/READMEscreenshots/Screenshot%202020-11-16%20125814.png)
+- ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20125814.png)
 
 ### Install Ruby on Rails for a Rails project
 
@@ -70,7 +70,7 @@ link |
     - `rbenv rehash`
 - verify rails is installed by getting version number
     - `rails -v`
-- ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/READMEscreenshots/Screenshot%202020-11-16%20132904.png)
+- ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20132904.png)
 
 #### Install MYSQL
 
@@ -80,11 +80,11 @@ link |
     - `sudo service mysql status`
 - if it is stopped, start it
     - `sudo service mysql start`
-    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/READMEscreenshots/Screenshot%202020-11-16%20140550.png)
+    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20140550.png)
 - secure installation
     - `sudo mysql_secure_installation`
     - answer questions to your preferences
-    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/READMEscreenshots/Screenshot%202020-11-16%20140946.png)
+    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20140946.png)
 - set password in mysql (again) DUE TO A BUG?
     - `sudo mysql -u root`
     - select the mysql table
@@ -147,10 +147,10 @@ link |
     - `quit`
 - update rails config file
     - file path home/<username>/Sites/demo_project/config/database.yml
-        - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/READMEscreenshots/Screenshot%202020-11-17%20093839.png)
+        - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-17%20093839.png)
     - change username from `root` to `demo_project_user`
     - change password from ` ` to `demo_project_password`
-    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/READMEscreenshots/Screenshot%202020-11-17%20113509.png)
+    - ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-17%20113509.png)
 - in Ubuntu, make sure you are in the demo_project directory
     - path: `home/<username>/Sites/demo_project/`
         - use `pwd` if you don't know where you are
