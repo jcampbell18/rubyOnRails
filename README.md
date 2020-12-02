@@ -1,4 +1,4 @@
-<iframe src="https://github.com/jcampbell18/rubyOnRails/blob/main/README.md"</iframe>
+<iframe src="https://github.com/jcampbell18/rubyOnRails/blob/main/links.md"</iframe>
 
 # rubyOnRails
 
