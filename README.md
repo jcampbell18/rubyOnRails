@@ -9,8 +9,9 @@
 | &#8594; [Ruby Essential Training 2](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/2_EssentialTraining) |
 | &#8594; [Ruby Essential Training 3](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/3_EssentialTraining) |
 | [Projects](https://github.com/jcampbell18/rubyOnRails/tree/main/projects) |
-| &#8594; [Demo Project](https://github.com/jcampbell18/rubyOnRails/tree/main/projects) |
-| &#8594; [Simple CMS](https://github.com/jcampbell18/rubyOnRails/tree/main/projects) |
+| &#8594; Demo Project |
+| &#8594; Simple CMS |
+| &#8594; Invoicing System |
 
 # rubyOnRails
 
