@@ -5,6 +5,7 @@ link |
 [Ruby on Rails: Controllers and Views](https://github.com/jcampbell18/rubyOnRails/tree/main/3_RoR_Controllers_Views) |
 [Ruby on Rails: Models and Associations](https://github.com/jcampbell18/rubyOnRails/tree/main/4_RoR_Models_Associations) |
 [Ruby](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby) |
+[Projects](https://github.com/jcampbell18/rubyOnRails/tree/main/projects) |
 
 # Kevin Skoglund: Ruby on Rails 6 - Essential Training
 
