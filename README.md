@@ -1,9 +1,10 @@
 | Repository Links |
 | :--------------- |
 | [Ruby on Rails](https://github.com/jcampbell18/rubyOnRails) |
-| &#8594; [Ruby on Rails: Installation and Running Ruby on Rails 6](https://github.com/jcampbell18/rubyOnRails/tree/main/1_Installing_Setup) |
-| &#8594; [Ruby on Rails: Controllers and Views](https://github.com/jcampbell18/rubyOnRails/tree/main/3_RoR_Controllers_Views) |
-| &#8594; [Ruby on Rails: Models and Associations](https://github.com/jcampbell18/rubyOnRails/tree/main/4_RoR_Models_Associations) |
+| &#8594; [Installation and Running Ruby on Rails 6](https://github.com/jcampbell18/rubyOnRails/tree/main/1_Installing_Setup) |
+| &#8594; [Ruby on Rails 6: Essential Training](https://github.com/jcampbell18/rubyOnRails/tree/main/2_RoR_Essential_Training) |
+| &#8594; [Ruby on Rails 6: Controllers and Views](https://github.com/jcampbell18/rubyOnRails/tree/main/3_RoR_Controllers_Views) |
+| &#8594; [Ruby on Rails 6: Models and Associations](https://github.com/jcampbell18/rubyOnRails/tree/main/4_RoR_Models_Associations) |
 | [Ruby](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby) |
 | &#8594; [Ruby Essential Training 1](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/1_The_Basics) |
 | &#8594; [Ruby Essential Training 2](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/2_EssentialTraining) |
