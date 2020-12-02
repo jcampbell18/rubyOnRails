@@ -55,4 +55,4 @@ link |
 	
 ### URL Helpers
 
-- ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/READMEscreenshots/Screenshot%202020-11-18%20134522.png)
+- ![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/2_RoR_Essential_Training/READMEscreenshots/Screenshot%202020-11-18%20134522.png)
