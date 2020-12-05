@@ -13,7 +13,7 @@
 
 ### Ruby
 
-1. Make sure everything is up to date
+1. Update the package sources list
 	1. `sudo apt update`
 2. Install curl
 	1.`sudo apt install curl`
@@ -21,7 +21,7 @@
 	1. `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -`
 	2. `curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`
 	3. `echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`
-6. Make sure everything is up to date
+6. Update the package sources list
 	1. `sudo apt update`
 7. Install dependencies needed for ruby and rails
 	1. `sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn`
@@ -90,7 +90,7 @@ JetBrain's RubyMine IDE has built-in Git tools, so these steps are not needed
 
 ### Dependencies
 
-4. Update the software
+4. Update the package sources list
 	1. `sudo apt update`
 5. Upgrade the software
 	1. `sudo apt upgrade`
