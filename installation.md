@@ -3,8 +3,8 @@
 - [x] Ruby Version: 2.7.2
 - [x] Rails Version: 6.0.3.4
 
-| Links |
-| :--- |
+| Quick Links |
+| :---- |
 | [Ubuntu](https://github.com/jcampbell18/rubyOnRails/blob/main/installation.md#ubuntu-2004lts-focal-fossa) |
 | [Windows 10](https://github.com/jcampbell18/rubyOnRails/blob/main/installation.md#windows-10) |
 | [References](https://github.com/jcampbell18/rubyOnRails/blob/main/installation.md#references) |
