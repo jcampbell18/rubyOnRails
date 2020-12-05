@@ -1,8 +1,7 @@
 # Installation for Ruby on Rails
 
-[x] Ruby Version: 2.7.2
-
-[x] Rails Version: 6.0.3.4
+- [x] Ruby Version: 2.7.2
+- [x] Rails Version: 6.0.3.4
 
 | Links |
 | :--- |
