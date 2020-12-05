@@ -5,11 +5,11 @@
 
 | Quick Links |
 | :---- |
-| [Ubuntu](https://github.com/jcampbell18/rubyOnRails/blob/main/installation.md#ubuntu-2004lts-focal-fossa) |
+| [Ubuntu 20.04](https://github.com/jcampbell18/rubyOnRails/blob/main/installation.md#ubuntu-2004lts-focal-fossa) |
 | [Windows 10](https://github.com/jcampbell18/rubyOnRails/blob/main/installation.md#windows-10) |
 | [References](https://github.com/jcampbell18/rubyOnRails/blob/main/installation.md#references) |
 
-## Ubuntu 20.04LTS (Focal Fossa)
+## Ubuntu 20.04 (Focal Fossa)
 
 ### Ruby
 
