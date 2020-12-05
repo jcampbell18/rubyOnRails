@@ -131,7 +131,16 @@
     - `sudo apt update`
     - `sudo apt install yarn`
    
-## Chapter 3: Rum Ruby on Rails
+## Chapter 3: Run Ruby on Rails
+
+### RubyMine 2020.3 (if using IDE)
+    
+    - Create New Project
+        - Select Rails Application
+        - Enter path and project name
+        - ADD Ruby SDk
+            - Subsytem Linux (Ubuntu) Ruby's SDK is located: `/home/USER/.rbenv/versions/2.7.2/bin/ruby`
+        - Select Rails Version
     
 ### Create a New Ruby on Rails Project, Configure the Project to use a Database
 
