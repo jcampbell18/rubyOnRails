@@ -86,6 +86,8 @@ JetBrain's RubyMine IDE has built-in Git tools, so these steps are not needed
 	2. Click "Turn Windows features on or off" link
 	3. Check the box labeled "Windows Subsystem for Linux"
 2. Install Ubuntu 20.04 from the Microsoft Store
+	![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20140140.png)
+	![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20140211.png)
 3. Ubuntu will ask you to create username and password for user on initialization
 
 ### Dependencies
@@ -102,6 +104,7 @@ JetBrain's RubyMine IDE has built-in Git tools, so these steps are not needed
 7. Install rbenv
 	1. $ `curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash`
 		1. A warning will appear that rbenv is installed but not present in PATH
+		![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20125634.png)
 8. Add rbenv to PATH
 	1. Open/Edit file
 		1. $ `nano .bashrc`
@@ -117,14 +120,17 @@ JetBrain's RubyMine IDE has built-in Git tools, so these steps are not needed
 
 9. Get list of available Ruby versions
 	1. $ `rbenv install --list`
+	![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20125706.png)
 10. Install Ruby 2.7.2
 	1. $ `rbenv install 2.7.2`
+	![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20125730.png)
 11. Set version of ruby as default
 	1. $ `rbenv global 2.7.2`
 12. Verify ruby installation
 	1. $ `ruby -v`
-13. Verify ruby installation
+13. Verify gem installation
 	1. $ `gem -v`
+	![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20125814.png)
 	
 ### Rails
 
@@ -134,6 +140,7 @@ JetBrain's RubyMine IDE has built-in Git tools, so these steps are not needed
 	1. $ `rbenv rehash`
 16. Verify rails installation
 	1. $ `rails -v`
+	![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20132904.png)
 	
 ### JavaScript Tools
 
@@ -159,9 +166,11 @@ JetBrain's RubyMine IDE has built-in Git tools, so these steps are not needed
 	1. $ `sudo service mysql status`
 		1. If it is stopped, then start it
 			1. $ `sudo service mysql start`
+			![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20140550.png)
 3. Secure installation
 	1. $ `sudo mysql_secure_installation`
 		1. Answer questions to your specifications
+		![screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/1_Installing_Setup/READMEscreenshots/Screenshot%202020-11-16%20140946.png)
 4. Due to a bug, the password will need to be set again
 	1. $ `sudo mysql -u root`
 		1. Select the mysql table
