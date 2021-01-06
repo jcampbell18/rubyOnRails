@@ -9,9 +9,6 @@
 | &#8594; [Kevin Skoglund's Ruby Essential Training 1](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/1_The_Basics) |
 | &#8594; [Kevin Skoglund's Ruby Essential Training 2](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/2_EssentialTraining) |
 | &#8594; [Kevin Skoglund's Ruby Essential Training 3](https://github.com/jcampbell18/rubyOnRails/tree/main/ruby/3_EssentialTraining) |
-| [Projects](https://github.com/jcampbell18/rubyOnRails/tree/main/projects) |
-| &#8594; [Record Store (Ruby on Rails with Vue.js)](https://github.com/jcampbell18/ror_recordstore) |
-| &#8594; [Invoicing System](https://github.com/jcampbell18/ror_invoicing) |
 
 # rubyOnRails
 
