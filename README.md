@@ -23,6 +23,16 @@
 [Instructions for Ubuntu 20.04](https://github.com/jcampbell18/rubyOnRails/blob/main/installation.md#ubuntu-2004lts-focal-fossa)
 
 
+## Current Project
+
+### Invoicing System (aka DocJas.com)
+
+- project is currently in progress...
+
+- [Source Code](https://github.com/jcampbell18/ror_invoicing)
+
+![Screenshot](https://github.com/jcampbell18/rubyOnRails/blob/main/rubyonrails.png)
+
 ## Course Links
 
 [Kevin Skoglund: Installing and Running Ruby on Rails 6](https://www.linkedin.com/learning/installing-and-running-ruby-on-rails-6/)
